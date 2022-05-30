@@ -1,45 +1,47 @@
 /* Basic Style */
 
-body {
+.todo-app {
     background-color: #f8f8f8;
     color: #333;
     font-family: Lato, sans-serif;
 }
 
-.aaa {
+.todo-app__intro {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
 
-.aaa img {
+.todo-app__intro-img {
     width: 100%;
 }
 
-.aaa .more_inf {
+.todo-app__intro-details {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-    .aaa { text-align: center;
+    .todo-app__intro { 
+        text-align: center;
     }
 }
 
-.centered-main-page-element {
+.container {
     display: block;
     width: 500px;
     margin: 0 auto 0;
 }
 
-.task {
+.add-item__wrapper {
+    display: flex;
+    margin: 20px 0;
+}
+
+.add-item__task {
     width: 56%;
     display: inline-block;
     flex-grow: 1
-}
-
-.task-row-wrapper {
-    display: flex;
 }
 
 ul {
@@ -152,7 +154,7 @@ button.delete img:hover {
 
 /* Completed */
 
-ul#completed-tasks label {
+ul#completed__tasks label {
     text-decoration: line-through
     color: #888888;
 }
@@ -163,11 +165,11 @@ ul li input[type=text] {
     display:none
 }
 
-ul li.editMode input[type=text] {
+ul li.todo__edit-mode input[type=text] {
     display:inline-block;
     width:224px
 }
 
-ul li.editMode label {
+ul li.todo__edit-mode label {
     display:none;
 }
