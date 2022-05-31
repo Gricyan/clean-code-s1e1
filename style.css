@@ -1,4 +1,21 @@
-/* Basic Style */
+/* Default styles reset */
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+/* Basic styles */
 
 .todo-app {
   background-color: #f8f8f8;
@@ -44,22 +61,6 @@
   flex-grow: 1;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-}
-
-/* input,  */
-button {
-  outline: none;
-  border: none;
-  background-color: transparent;
-}
-
 .btn {
   background: none;
   border: 0px;
@@ -73,8 +74,6 @@ button {
 .btn:hover {
   color: #3a3a3a;
 }
-
-/* Heading */
 
 .task-title {
   color: #333333;
@@ -104,16 +103,11 @@ button {
   color: #333333;
 }
 
-/* New Task */
-
 input#new-task {
   width: 318px;
 }
 
-/* Task list */
-
-#todo__tasks > li,
-#completed__tasks > li {
+.task {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eeeeee;
@@ -147,14 +141,10 @@ button.task__delete img:hover {
   transform: rotateZ(0);
 }
 
-/* Completed */
-
 ul#completed__tasks .task__name {
   text-decoration: line-through;
   color: #888888;
 }
-
-/* Edit Task */
 
 .task__input {
   display: none;
