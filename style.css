@@ -103,7 +103,7 @@ button {
   color: #333333;
 }
 
-input#new-task {
+.add-item__task {
   width: 318px;
 }
 
@@ -141,7 +141,7 @@ button.task__delete img:hover {
   transform: rotateZ(0);
 }
 
-ul#completed__tasks .task__name {
+#completed__tasks .task__name {
   text-decoration: line-through;
   color: #888888;
 }
