@@ -35,7 +35,7 @@ button {
 }
 
 .todo-app__intro-details {
-  font-family: fantasy, cursive;
+  font-family: "Fantasy", cursive;
 }
 
 @media (max-width: 768px) {
