@@ -131,13 +131,13 @@ button {
   width: 226px;
 }
 
-button.task__delete img {
+.task__delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.task__delete img:hover {
+.task__delete img:hover {
   transform: rotateZ(0);
 }
 
